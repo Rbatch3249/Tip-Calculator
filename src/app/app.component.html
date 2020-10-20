@@ -1,0 +1,24 @@
+<h1>{{title | uppercase}}</h1>
+<div class="card">
+  <div class="card-header">
+    Calculate your tip here!
+  </div>
+  <ul class="list-group list-group-flush">
+    <form action="">
+    <li class="list-group-item">Meal Price:<input #input1 type='number'[value]='input1'></li>
+    <li class="list-group-item">Tax:<input #input2 type="number" [value]='input2'></li>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button (click)="setTenPercent()" type="button" class="btn btn-secondary">10% Tip</button>
+      <button (click)="setEighteenPercent()" type="button" class="btn btn-dark">18% Tip</button>
+      <button (click)="setTwentyPercent()" type="button" class="btn btn-secondary">20% Tip</button>
+    </div>
+    <li class="list-group-item">Tip: {{tip | percent}}</li>
+  </form>
+  </ul>
+  <div class="button">
+    <button (click)='tipCalc(input1.value,input2.value)'class="btn btn-success">Final Price</button>
+  
+
+</div>
+</div><input (click)="resetFun()" type="button" value="Clear" class="btn">
+<h3>{{finalPrice | currency}}</h3>

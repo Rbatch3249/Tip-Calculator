@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    background: #dddddd;
+    margin-bottom: auto;
+}
+.card{
+   
+}
+
+.card-header{
+    text-align: center;
+    background: #dddddd;
+}
+.list-group-item{
+   background: #fff9f9;
+}
+.list-group{
+    text-align: center;
+    background: #dddddd;
+}
+.button{
+    align-content: center;
+    
+}
+input{
+    background: #dddddd;
+}
+h3{
+    color: green;
+    
+}
